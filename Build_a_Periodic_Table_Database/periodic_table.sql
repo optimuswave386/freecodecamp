@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 12.9 (Ubuntu 12.9-2.pgdg20.04+1)
--- Dumped by pg_dump version 12.9 (Ubuntu 12.9-2.pgdg20.04+1)
+-- Dumped from database version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
+-- Dumped by pg_dump version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -132,11 +132,11 @@ INSERT INTO public.elements VALUES (10, 'Ne', 'Neon');
 -- Data for Name: properties; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.properties VALUES (1, 1.008, -259.1, -252.9, 3);
+INSERT INTO public.properties VALUES (2, 4.0026, -272.2, -269, 3);
 INSERT INTO public.properties VALUES (3, 6.94, 180.54, 1342, 1);
 INSERT INTO public.properties VALUES (4, 9.0122, 1287, 2470, 1);
 INSERT INTO public.properties VALUES (5, 10.81, 2075, 4000, 2);
-INSERT INTO public.properties VALUES (1, 1.008, -259.1, -252.9, 3);
-INSERT INTO public.properties VALUES (2, 4.0026, -272.2, -269, 3);
 INSERT INTO public.properties VALUES (6, 12.011, 3550, 4027, 3);
 INSERT INTO public.properties VALUES (7, 14.007, -210.1, -195.8, 3);
 INSERT INTO public.properties VALUES (8, 15.999, -218, -183, 3);
@@ -243,3 +243,4 @@ ALTER TABLE ONLY public.properties
 --
 -- PostgreSQL database dump complete
 --
+
