@@ -3,11 +3,10 @@
 # create PSQL variable to query database
 PSQL="psql -x --username=freecodecamp --dbname=periodic_table --tuples-only -c"
 
-
 # if no argument:
 if [[ -z $1 ]]
   then
-    echo Please provide an element as an argument.
+    echo -e "Please provide an element as an argument."
   
   #if there is an argument:
   else 
@@ -27,7 +26,7 @@ if [[ -z $1 ]]
     # if element is not found
     if [[ -z $GET_ELEMENT_SELECTED ]]
       then
-        echo I could not find that element in the database.
+        echo -e "I could not find that element in the database."
       
       # if element is found
       else
