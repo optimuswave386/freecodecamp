@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 12.9 (Ubuntu 12.9-2.pgdg20.04+1)
--- Dumped by pg_dump version 12.9 (Ubuntu 12.9-2.pgdg20.04+1)
+-- Dumped from database version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
+-- Dumped by pg_dump version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -176,6 +176,8 @@ ALTER TABLE ONLY public.services ALTER COLUMN service_id SET DEFAULT nextval('pu
 INSERT INTO public.appointments VALUES (2, 7, 3, '11am');
 INSERT INTO public.appointments VALUES (3, 10, 2, '16:45');
 INSERT INTO public.appointments VALUES (10, 4, 9, '1pm');
+INSERT INTO public.appointments VALUES (17, 1, 15, '10:30');
+INSERT INTO public.appointments VALUES (18, 2, 15, '11am');
 
 
 --
@@ -185,6 +187,7 @@ INSERT INTO public.appointments VALUES (10, 4, 9, '1pm');
 INSERT INTO public.customers VALUES (3, '234-567', 'Maria');
 INSERT INTO public.customers VALUES (2, '123-456', 'Anna');
 INSERT INTO public.customers VALUES (9, '999-9999', 'Zack');
+INSERT INTO public.customers VALUES (15, '555-555-5555', 'Fabio');
 
 
 --
@@ -207,14 +210,14 @@ INSERT INTO public.services VALUES (10, 'hair removal');
 -- Name: appointments_appointment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 16, true);
+SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 24, true);
 
 
 --
 -- Name: customers_customer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.customers_customer_id_seq', 14, true);
+SELECT pg_catalog.setval('public.customers_customer_id_seq', 20, true);
 
 
 --
@@ -275,3 +278,4 @@ ALTER TABLE ONLY public.appointments
 --
 -- PostgreSQL database dump complete
 --
+
